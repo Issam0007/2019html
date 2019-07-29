@@ -1,0 +1,73 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-juil.-2019, 10:33:46
+    Author     : Formateur
+*/
+body{
+    font-family: "comic sans ms", cursive, sans-serif;
+    font-size: 1.5em;
+    padding: .5em;
+    display: flex;
+
+}
+h1{
+    font-family: 'Arbutus';
+    font-size:1.5em; /*32px;*/
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+aside {
+    width: 10%;
+    background-color: graytext;
+
+}
+section { 
+    width: 90%;
+    background-color: goldenrod;
+    padding-left: .5em;
+    padding-right: 5em;
+}
+article{
+    display: flex;
+}
+figure{
+    position: absolute;
+    top: 0;
+    right: 0;
+   
+}
+img{
+    border: 0.5em black solid;
+    border-radius: 0 0 2em 0;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+img:hover {
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 1024px){
+    aside{
+        display: none;
+    }
+    article{
+        flex-direction: column; 
+    }
+}
+
+@media only screen and (max-width: 800px){
+    figure{
+        display: none;
+    }
+    body{
+        font-size: 1.2em;
+    }
+}
